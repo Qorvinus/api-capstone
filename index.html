@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PC Builder</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--Main landing page-->
+    <input type="submit" value="Build a PC!">
+    <!--Selection page-->
+    <main class="container" role="main">
+      <form id="js-pc-parts">
+        <label for="cpu">Select a CPU</label>
+          <select name="cpu" class="js-cpu cpu">
+            <option value="i3">Intel i3</option>
+            <option value="i5">Intel i5</option>
+            <option value="i7">Intel i7</option>
+            <option value="2200G">Ryzen 3</option>
+            <option value="2600">Ryzen 5</option>
+            <option value="2700">Ryzen 7</option>
+          </select>
+        <div class="js-cpu-adds">
+          <div>Price of CPU: $249.99</div>
+          <div>Youtube video reviews on CPU</div>
+          <div>Specs page of product</div>
+        </div>
+        <label for="gpu">Select a GPU</label>
+          <select name="gpu" class="js-gpu gpu">
+            <option value="2060">Geforce 2060</option>
+            <option value="2070">Geforce 2070</option>
+            <option value="2080">Geforce 2080</option>
+            <option value="560">AMD RX-560</option>
+            <option value="570">AMD RX-570</option>
+            <option value="580">AMD RX-580</option>
+          </select>
+        <div class="js-cpu-adds">
+          <div>Price of GPU: $299.99</div>
+          <div>Youtube video reviews on GPU</div>
+          <div>Specs page of product</div>
+        </div>
+          <!--and so forth for more computer hardware-->
+    <!--Ending page-->
+        <div class="js-total total">
+          <span>Total Price: $999.99</span>
+          <div class="js-ytvid">Youtube Video: How to build PC</div>
+        </div>
+    <script src="index.js"></script>
+  </body>
+</html>
